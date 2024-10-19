@@ -1,0 +1,121 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e8f8;
+    color: #5a5a5a;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Генератор блоки */
+.generator-box {
+    border: 2px solid #d8bfd8;  /* Лілова рамка */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fff0f5;  /* Рожевий пастельний фон */
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #993399;  /* Темний фіолетовий */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* Таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #e0cfe0;
+}
+
+th, td {
+    padding: 15px 20px;
+    font-size: 1em;
+    color: #5a5a5a;
+}
+
+thead {
+    background-color: #d8bfd8; /* Ліловий для заголовка таблиці */
+    color: #ffffff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fce4ec;
+}
+
+tbody tr:hover {
+    background-color: #f8bbd0;  /* Світло-рожевий відтінок при наведенні */
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопки */
+button, .back-button, .history-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #993399;  /* Темний фіолетовий */
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .back-button:hover, .history-button:hover {
+    background-color: #b565b9;  /* Світло-фіолетовий колір при наведенні */
+}
+
+/* Стиль для посилань */
+a {
+    color: #993399;  /* Фіолетовий колір для посилань */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #b565b9;
+    text-decoration: underline;
+}

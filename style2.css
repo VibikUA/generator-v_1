@@ -1,0 +1,105 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+/* Генератор блоки */
+.generator-box {
+    border: 2px solid #424242;  /* Сіра рамка */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #2c2c2c;  /* Темно-сірий фон */
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #90caf9;  /* Світло-блакитний для заголовків */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #333333;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #424242;
+}
+
+th, td {
+    padding: 15px 20px;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+thead {
+    background-color: #424242; /* Темно-сіра для заголовка таблиці */
+    color: #ffffff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+}
+
+tbody tr:hover {
+    background-color: #424242;  /* Темно-сірий відтінок при наведенні */
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопки */
+button, .back-button, .history-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #90caf9;  /* Світло-блакитний для кнопок */
+    color: #121212;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .back-button:hover, .history-button:hover {
+    background-color: #64b5f6;  /* Трохи світліший відтінок при наведенні */
+}
+
+/* Стиль для посилань */
+a {
+    color: #90caf9;  /* Світло-блакитний для посилань */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #64b5f6;  /* Трохи світліший відтінок при наведенні */
+    text-decoration: underline;
+}

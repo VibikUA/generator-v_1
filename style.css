@@ -1,0 +1,168 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;  /* Світлий фон */
+    color: #333;  /* Темно-сірий колір тексту для кращої читабельності */
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 900px;  /* Зменшена максимальна ширина контейнера для більш компактного вигляду */
+    margin: 20px auto;  /* Зменшені відступи зверху і знизу */
+    background-color: #fff;
+    padding: 20px;  /* Зменшений відступ всередині контейнера */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Легкий тінь для ефекту глибини */
+    border-radius: 6px;  /* Зменшений радіус кутів */
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #2e7d32;  /* Темно-зелений колір для заголовків */
+    margin-bottom: 15px;  /* Зменшений відступ знизу */
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 28px;  /* Зменшений розмір шрифту для компактного вигляду */
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+/* Таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;  /* Зменшений відступ зверху і знизу */
+    background-color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;  /* Світло-сірий колір для рамок */
+}
+
+th, td {
+    padding: 10px;  /* Зменшений внутрішній відступ для компактності */
+    font-size: 0.95em;  /* Зменшений розмір шрифту */
+    color: #333;
+}
+
+thead {
+    background-color: #66bb6a;  /* Світло-зелений колір для заголовка таблиці */
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;  /* Легкий світло-сірий відтінок для парних рядків */
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa;  /* Світло-блакитний відтінок при наведенні */
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопки */
+button, .back-button, .history-button {
+    display: inline-block;
+    padding: 8px 15px;  /* Зменшені відступи для компактності */
+    margin-top: 10px;  /* Зменшений відступ зверху */
+    font-size: 14px;  /* Зменшений розмір шрифту */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #43a047;  /* Яскравий зелений колір для кнопок */
+    color: #fff;
+    border: none;
+    border-radius: 4px;  /* Зменшений радіус кутів */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .back-button:hover, .history-button:hover {
+    background-color: #66bb6a;  /* Світло-зелений колір при наведенні */
+}
+
+button:focus, .back-button:focus, .history-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(67, 160, 71, 0.3);  /* Легкий акцент для фокусу */
+}
+
+/* Стиль для посилань */
+a {
+    color: #2e7d32;  /* Темно-зелений колір для посилань */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #66bb6a;  /* Світло-зелений колір при наведенні */
+    text-decoration: underline;
+}
+
+/* Центрування кнопок */
+.history-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Зменшена відстань між кнопками */
+    margin-top: 20px;  /* Зменшений відступ зверху */
+}
+
+/* Повідомлення про заміну масла */
+strong {
+    color: #d32f2f; /* Червоний колір для попередження про заміну масла */
+    font-size: 1.1em;  /* Невеликий розмір шрифту для компактності */
+}
+
+/* Форми */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  /* Зменшена відстань між елементами */
+    margin-top: 10px;
+}
+
+label {
+    font-size: 1em;  /* Зменшений розмір шрифту */
+    margin-bottom: 5px;
+}
+
+input[type="number"], input[type="datetime-local"], select {
+    width: 80%;  /* Ширина полів вводу зменшена для компактності */
+    padding: 8px;  /* Зменшений внутрішній відступ */
+    font-size: 0.95em;  /* Зменшений розмір шрифту */
+    margin-bottom: 10px;  /* Зменшений відступ знизу */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus, input[type="datetime-local"]:focus, select:focus {
+    border-color: #66bb6a;  /* Світло-зелений колір при фокусі */
+    outline: none;
+}
+
+/* Графік */
+canvas {
+    margin: 20px 0;
+    border: 1px solid #ddd;  /* Легка рамка для графіка */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}

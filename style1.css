@@ -1,0 +1,105 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Генератор блоки */
+.generator-box {
+    border: 2px solid #00796b;  /* Темно-зелена рамка */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #e0f7fa;  /* Світло-блакитний фон */
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #004d40;  /* Темно-зелений для заголовків */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #e0e0e0;
+}
+
+th, td {
+    padding: 15px 20px;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+thead {
+    background-color: #00796b; /* Темно-зелений колір для заголовка таблиці */
+    color: #ffffff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fbfc;
+}
+
+tbody tr:hover {
+    background-color: #b2dfdb;  /* Світло-зелений відтінок при наведенні */
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопки */
+button, .back-button, .history-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #004d40;  /* Темно-зелений колір для кнопок */
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .back-button:hover, .history-button:hover {
+    background-color: #00796b;  /* Світло-зелений колір при наведенні */
+}
+
+/* Стиль для посилань */
+a {
+    color: #00796b;  /* Темно-зелений колір для посилань */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #004d40;  /* Темно-зелений колір при наведенні */
+    text-decoration: underline;
+}

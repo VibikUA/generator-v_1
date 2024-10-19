@@ -1,0 +1,105 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Генератор блоки */
+.generator-box {
+    border: 1px solid #dddddd;  /* Світло-сіра рамка */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #ffffff;  /* Білий фон */
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #eeeeee;
+}
+
+th, td {
+    padding: 12px 15px;
+    font-size: 1em;
+    color: #333333;
+}
+
+thead {
+    background-color: #f0f0f0; /* Світло-сірий колір для заголовка таблиці */
+    color: #333333;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #eaeaea;  /* Світло-сірий відтінок при наведенні */
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопки */
+button, .back-button, .history-button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #333333;  /* Чорний колір для кнопок */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .back-button:hover, .history-button:hover {
+    background-color: #555555;  /* Трохи світліший колір при наведенні */
+}
+
+/* Стиль для посилань */
+a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #555555;
+}
