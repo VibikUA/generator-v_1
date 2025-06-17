@@ -185,8 +185,6 @@ $generators = getActiveGenerators($pdo);
             });
         });
     </script>
-</head>
-<body>
     <div class="container">
         <!-- Випадаюче меню для вибору стилю -->
         <label for="themeSelector">Оберіть стиль сайту:</label>
